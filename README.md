@@ -28,6 +28,13 @@ NOTA: Cuando el servicio este corriendo, se puede ver la documentación en la ur
 Por último podemos ejecutar el comando start:
 ```yarn documentation```
 
+## Instrucciones de Uso:
+Para poder usar el API se deben seguir estos pasos:
+1. Correr la aplicación siguiendo los pasos anteriores.
+2. Generar el token de autenticación, pueden hacer una solicitud GET a esta url: http://localhost:8000/token, en la documentación del API se encuentra como generarlo.
+3. Establecer la cabecera HTTP, "Authorization Bearer Token" con el token generado.
+4. Luego de esto se puede usar el API como se indica en la documentación.
+
 ## Babel
 Se usa babel para transpilar el código ES6 
 
