@@ -163,7 +163,7 @@ app.post('/task', auth.verifyToken, (req, res) => {
 });
 
 /**
- * @api {put} /task/ Request to update task
+ * @api {put} /task/:id Request to update task
  * @apiName updateTask
  * @apiGroup Tasks
  *
