@@ -1,0 +1,22 @@
+version: "3"
+volumes:
+    pgdata:
+services:
+    db:
+        container_name: db_todo
+        image: postgres:alpine
+        volumes:
+            - pgdata:/var/lib/postgresql/data
+        networks:
+            todo_network:
+                ipv4_address: 10.20.0.3
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_PASSWORD: example
+networks:
+    todo_network:
+        ipam:
+            driver: default
+            config:
+                - subnet: 10.20.0.0/24
