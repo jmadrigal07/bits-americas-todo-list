@@ -29,7 +29,7 @@ Para generar la documentación del api ejecutamos el comando:
 NOTA: Cuando el servicio este corriendo, se puede ver la documentación en la url: http://<ip>/apidoc/
 
 Por último podemos ejecutar el comando start:
-```yarn documentation```
+```yarn start```
 
 ## Instrucciones de Uso:
 Para poder usar el API se deben seguir estos pasos:
